@@ -26,46 +26,46 @@
         $name: nth($breakpoint, 1);
         $declaration: nth($breakpoint, 2);
         @media only screen and #{$declaration} {
-            &.row--#{$declaration}--gutterless {
+            &.row--#{$name}--gutterless {
                 margin-left: 0;
             }
-            &.row--#{$declaration}--start {
+            &.row--#{$name}--start {
                 justify-content: flex-start;
                 text-align: start;
             }
-            &.row--#{$declaration}--center {
+            &.row--#{$name}--center {
                 justify-content: center;
                 text-align: center;
             }
-            &.row--#{$declaration}--center {
+            &.row--#{$name}--center {
                 justify-content: flex-end;
                 text-align: end;
             }
-            &.row--#{$declaration}--top {
+            &.row--#{$name}--top {
                 align-items: flex-start;
             }
-            &.row--#{$declaration}--middle {
+            &.row--#{$name}--middle {
                 align-items: center;
             }
-            &.row--#{$declaration}--bottom {
+            &.row--#{$name}--bottom {
                 align-items: flex-end;
             }
-            &.row--#{$declaration}--around {
+            &.row--#{$name}--around {
                 justify-content: space-around;
             }
-            &.row--#{$declaration}--between {
+            &.row--#{$name}--between {
                 justify-content: space-between;
             }
-            &.row--#{$declaration}--row {
+            &.row--#{$name}--row {
                 flex-direction: row;
             }
-            &.row--#{$declaration}--row-reverse {
+            &.row--#{$name}--row-reverse {
                 flex-direction: row-reverse;
             }
-            &.row--#{$declaration}--column {
+            &.row--#{$name}--column {
                 flex-direction: column;
             }
-            &.row--#{$declaration}--column-reverse {
+            &.row--#{$name}--column-reverse {
                 flex-direction: column-reverse;
             }
         }
