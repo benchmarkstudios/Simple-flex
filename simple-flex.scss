@@ -37,7 +37,7 @@
                 justify-content: center;
                 text-align: center;
             }
-            &.row--#{$name}--center {
+            &.row--#{$name}--end {
                 justify-content: flex-end;
                 text-align: end;
             }
