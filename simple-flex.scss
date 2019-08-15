@@ -26,46 +26,46 @@
         $name: nth($breakpoint, 1);
         $declaration: nth($breakpoint, 2);
         @media only screen and #{$declaration} {
-            &.row--#{$name}--gutterless {
+            &.row--#{$name}-gutterless {
                 margin-left: 0;
             }
-            &.row--#{$name}--start {
+            &.row--#{$name}-start {
                 justify-content: flex-start;
                 text-align: start;
             }
-            &.row--#{$name}--center {
+            &.row--#{$name}-center {
                 justify-content: center;
                 text-align: center;
             }
-            &.row--#{$name}--end {
+            &.row--#{$name}-end {
                 justify-content: flex-end;
                 text-align: end;
             }
-            &.row--#{$name}--top {
+            &.row--#{$name}-top {
                 align-items: flex-start;
             }
-            &.row--#{$name}--middle {
+            &.row--#{$name}-middle {
                 align-items: center;
             }
-            &.row--#{$name}--bottom {
+            &.row--#{$name}-bottom {
                 align-items: flex-end;
             }
-            &.row--#{$name}--around {
+            &.row--#{$name}-around {
                 justify-content: space-around;
             }
-            &.row--#{$name}--between {
+            &.row--#{$name}-between {
                 justify-content: space-between;
             }
-            &.row--#{$name}--row {
+            &.row--#{$name}-row {
                 flex-direction: row;
             }
-            &.row--#{$name}--row-reverse {
+            &.row--#{$name}-row-reverse {
                 flex-direction: row-reverse;
             }
-            &.row--#{$name}--column {
+            &.row--#{$name}-column {
                 flex-direction: column;
             }
-            &.row--#{$name}--column-reverse {
+            &.row--#{$name}-column-reverse {
                 flex-direction: column-reverse;
             }
         }
