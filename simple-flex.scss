@@ -15,6 +15,56 @@
     max-width: $grid-max-width;
     margin: 0 auto;
     padding: 0 $grid-gutter;
+
+    &[class*="container--"] {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @each $breakpoint in $breakpoints {
+        $name: nth($breakpoint, 1);
+        $declaration: nth($breakpoint, 2);
+        @media only screen and #{$declaration} {
+            &.container--#{$name}-start {
+                justify-content: flex-start;
+                text-align: start;
+            }
+            &.container--#{$name}-center {
+                justify-content: center;
+            }
+            &.container--#{$name}-end {
+                justify-content: flex-end;
+                text-align: end;
+            }
+            &.container--#{$name}-top {
+                align-items: flex-start;
+            }
+            &.container--#{$name}-middle {
+                align-items: center;
+            }
+            &.container--#{$name}-bottom {
+                align-items: flex-end;
+            }
+            &.container--#{$name}-around {
+                justify-content: space-around;
+            }
+            &.container--#{$name}-between {
+                justify-content: space-between;
+            }
+            &.container--#{$name}-row {
+                flex-direction: row;
+            }
+            &.container--#{$name}-row-reverse {
+                flex-direction: row-reverse;
+            }
+            &.container--#{$name}-column {
+                flex-direction: column;
+            }
+            &.container--#{$name}-column-reverse {
+                flex-direction: column-reverse;
+            }
+        }
+    }
 }
 
 .row {
